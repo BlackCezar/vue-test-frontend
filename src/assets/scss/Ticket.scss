@@ -1,0 +1,74 @@
+.ticket {
+    padding: 20px;
+    padding-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+
+    .row {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+    .row:first-of-type {
+        margin-bottom: 20px;   
+    }
+    .row:last-of-type {
+        margin-bottom: 0px;   
+    }
+    
+    .col {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        span {
+            display: block;
+        }
+
+        span.header {
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+
+            color: #A0B0B9;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 18px;
+        }
+
+        span.price {
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 24px;
+            color: #2196F3;
+        }
+        .ticket-company {
+            max-height: 36px;
+            object-fit: contain;
+            height: 100%;
+            margin-left: auto;
+        } 
+        span.value {
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 21px;
+            display: flex;
+            align-items: center;
+            
+            color: #4A4A4A;
+        }
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .ticket {
+        .col {
+            span.value, span.header {
+                font-size: 12px;
+            }
+            span.price {
+                font-size: 18px;
+            }
+        }
+        
+    }
+}

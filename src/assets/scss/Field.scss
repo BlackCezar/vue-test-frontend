@@ -1,0 +1,60 @@
+.field {
+    padding: 10px 20px;
+    max-height: 40px;
+    display: flex;
+    align-items: center;
+
+    input[type='checkbox'] {
+        appearance: none;
+        border: 1px solid #9ABBCE;
+        box-sizing: border-box;
+        border-radius: 2px;
+        cursor: pointer;
+        width: 20px;
+        height: 20px;
+        background-size: 12px 8px;
+        background-position: center;
+        margin-right: 10px;
+        background-repeat: no-repeat;
+    }
+
+    input[type='radio'] {
+        appearance: none;
+        border: 1px solid #9ABBCE;
+        box-sizing: border-box;
+        border-radius: 50%;
+        cursor: pointer;
+        width: 20px;
+        height: 20px;
+        background-size: 12px 12px;
+        background-position: center;
+        margin-right: 10px;
+        background-repeat: no-repeat;
+    }
+    
+    input[type='checkbox']:checked {
+        background-image: url('@/assets/imgs/done.svg');
+        border: 1px solid #2196F3;
+    }
+
+    input[type='radio']:checked {
+        border: 1px solid #2196F3;
+        background-image: url('@/assets/imgs/selected.svg');
+    }
+
+    label {
+        font-weight: 400;
+        font-size: 13px;
+        height: 100%;
+        cursor: pointer;
+        line-height: 20px;
+        color: #4A4A4A;
+    }
+}
+
+.field[data-type='radio']:hover, .field[data-type='checkbox']:hover {
+    background-color: #F1FCFF;
+    input {
+        border: 1px solid #2196F3;
+    }
+}
