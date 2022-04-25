@@ -4,7 +4,9 @@ import {defineProps} from 'vue'
 import '@/assets/scss/Ticket.scss'
 import Price from '../filters/price'
 import TimeFilter from '../filters/time'
+import TicketService from '../services/tickets'
 
+const ticketService = new TicketService()
 interface TicketComponentProps {
   ticket: Ticket
 }
@@ -23,10 +25,10 @@ defineProps<TicketComponentProps>()
         </div>
         <div class="col">
           <img
-            src=""
-            alt="s7"
+            :src="ticketService.getCompanyImage(ticket.companyId)"
+            :alt="ticket.companyId"
             class="ticket-company"
-          >
+          />
         </div>
       </div>
       <div v-for="segment in ticket.segments" :key="segment.id" class="row">

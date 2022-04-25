@@ -1,24 +1,17 @@
 # front
+Vue 3 проект с TypeScript
 
-## Project setup
+## Установка проекта
 ```
-yarn install
-```
-
-### Compiles and hot-reloads for development
-```
-yarn serve
+yarn install | npm install
 ```
 
-### Compiles and minifies for production
+### Запуск
 ```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
+yarn serve | npm run serve
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Сборка 
+```
+yarn build | npm run build
+```

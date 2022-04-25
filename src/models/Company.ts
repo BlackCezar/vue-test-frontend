@@ -1,5 +1,5 @@
 // компания
-export interface Company {
+export default interface Company {
   id: string;
   name: string;
   logo: string;
